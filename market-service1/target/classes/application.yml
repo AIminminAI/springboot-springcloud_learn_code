@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: marketservice1 #market-service的服务名称
+eureka:
+  client:
+    service-url: #eureka的地址信息
+      defaultZone: http://localhost:10001/eureka
+server:
+  port: 8081

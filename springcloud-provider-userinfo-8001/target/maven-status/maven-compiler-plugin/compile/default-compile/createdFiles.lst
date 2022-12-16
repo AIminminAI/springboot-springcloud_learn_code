@@ -1,0 +1,5 @@
+com\aiminhu\springcloud\service\UserInfoServiceImpl.class
+com\aiminhu\springcloud\dao\UserInfoDao.class
+com\aiminhu\springcloud\UserInfoProvider_8001.class
+com\aiminhu\springcloud\service\UserInfoService.class
+com\aiminhu\springcloud\controller\UserInfoController.class

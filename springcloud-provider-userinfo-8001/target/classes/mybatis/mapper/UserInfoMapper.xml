@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.aiminhu.springcloud.dao.UserInfoDao">
+    <insert id="addUser" parameterType="com.aiminhu.springcloud.pojo.UserInfo">
+        insert into user_info (department_name, db_source_name)
+        values (#{department_name}, DATABASE())
+    </insert>
+
+    <select id="queryById" resultType="com.aiminhu.springcloud.pojo.UserInfo" parameterType="Long">
+        select * from user_info where user_num = #{user_num};
+    </select>
+
+    <select id="queryAll" resultType="com.aiminhu.springcloud.pojo.UserInfo">
+        select * from user_info;
+    </select>
+</mapper>
